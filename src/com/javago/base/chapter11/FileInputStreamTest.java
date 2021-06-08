@@ -24,6 +24,7 @@ public class FileInputStreamTest {
         int read = inputStream.read();
         System.out.println(read);
         System.out.println((char)read);
+        inputStream.close();
     }
 
     public static void skipTest(InputStream inputStream) throws IOException {
@@ -32,6 +33,7 @@ public class FileInputStreamTest {
         int read = inputStream.read();
         System.out.println(read);
         System.out.println((char)read);
+        inputStream.close();
     }
 
     public static void testReadByteArr(InputStream inputStream) throws IOException {
@@ -41,5 +43,6 @@ public class FileInputStreamTest {
         while ((length=inputStream.read(buffer)) != -1){
             System.out.println(new String(buffer, 0 , length));
         }
+        inputStream.close();
     }
 }
