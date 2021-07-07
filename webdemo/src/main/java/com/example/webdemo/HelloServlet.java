@@ -4,6 +4,7 @@ import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
+// Servlet3.0+ 配置
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
     private String message;

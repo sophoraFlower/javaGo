@@ -2,36 +2,29 @@ package com.example.webdemo;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class UserServlet extends HttpServlet {
+@WebServlet(name = "testServlet", urlPatterns = {"/test"})
+public class TestServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // super.doGet(req, resp);
-        //实战响应内容
         resp.setContentType("text/html;charset=utf-8");
         PrintWriter printWriter = resp.getWriter();
         printWriter.write("<div>Tokyo 2022</div>");
 
         ServletContext servletContext = req.getServletContext();
-        String str = servletContext.getInitParameter("url");
-        System.out.println(str);
-
-        servletContext.setAttribute("appInfo", "example.webdemo info");
-
+        String appInfo = (String) servletContext.getAttribute("appInfo");
+        System.out.println("TestServlet appInfo = " + appInfo);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // super.doGet(req, resp);
-        //实战响应内容
-        resp.setContentType("text/html;charset=utf-8");
-        PrintWriter printWriter = resp.getWriter();
-        printWriter.write("<div>Tokyo 2022</div>");
+        super.doPost(req, resp);
     }
 }
