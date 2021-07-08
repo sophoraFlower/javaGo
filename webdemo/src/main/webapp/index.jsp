@@ -9,6 +9,21 @@
 </h1>
 <br/>
 <a href="hello-servlet">Hello Servlet</a>
+<br/>
+<a href="chinese">Chinese Servlet</a>
+<br/>
+<a href="print-servlet">Print Servlet</a>
+<br/>
+<a href="print-servlet2">Print Servlet2</a>
+<br/>
+<a href="refresh">Refresh Servlet</a>
+<br/>
+<a href="request-forward">Request Forward Servlet</a>
+<br/>
+<a href="user/login">Login Servlet</a>
+<br/>
+<a href="including">Including Servlet</a>
+
 <br />
 <%
     out.println("IP address is " + request.getRequestURL());

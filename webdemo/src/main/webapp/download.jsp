@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Success!</title>
+    <title>Download!</title>
 </head>
 <body>
-<a href="/webdemo/refresh">Success~</a>
+<a href="/webdemo/download">Download~</a>
 </body>
 </html>
+
