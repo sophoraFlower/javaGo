@@ -5,6 +5,6 @@
     <title>Success!</title>
 </head>
 <body>
-<a href="/webdemo/refresh">Success~</a>
+<a href="refresh">Success~</a>
 </body>
 </html>

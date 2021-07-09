@@ -5,7 +5,7 @@
     <title>Download!</title>
 </head>
 <body>
-<a href="/webdemo/download">Download~</a>
+<a href="download">Download~</a>
 </body>
 </html>
 

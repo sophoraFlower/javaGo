@@ -20,7 +20,7 @@
 <br/>
 <a href="request-forward">Request Forward Servlet</a>
 <br/>
-<a href="user/login">Login Servlet</a>
+<a href="user-login">Login Servlet</a>
 <br/>
 <a href="including">Including Servlet</a>
 
