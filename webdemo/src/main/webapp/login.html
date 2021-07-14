@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Login</title>
+</head>
+<body>
+    <form name="reg" action="/webdemo/LoginServlet" method="post">
+        用户名：<input name="username" type="text" value="请输入用户名"/><br />
+        密码：  <input name="password" type="text" value="请输入密码"/><br />
+        验证码：<input name="check_code" type="text">
+               <img src="/webdemo/CheckServlet" alt=""><br />
+               <input type="submit" value="提交" id="bt"/><br />
+    </form>
+</body>
+</html>
