@@ -1,21 +1,22 @@
-package com.example.webdemo4;
+package com.example.webdemo6;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-// 临时注释，影响webdemo6示例运行
-// @WebServlet("/LogoutServlet")
 public class LogoutServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // 将Session对象中的User对象移除
         req.getSession().removeAttribute("user");
-        resp.sendRedirect("/webdemo/IndexServlet");
+        Cookie cookie = new Cookie("autologin", "msg");
+        cookie.setPath(req.getContextPath());
+        cookie.setMaxAge(0);
+        resp.addCookie(cookie);
+        resp.sendRedirect(req.getContextPath() + "/login-index.jsp");
     }
 
     @Override

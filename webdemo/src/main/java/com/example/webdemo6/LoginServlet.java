@@ -1,36 +1,34 @@
-package com.example.webdemo4;
+package com.example.webdemo6;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
-// 临时注释，影响webdemo6示例运行
-// @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html;charset=utf-8");
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        String checkCode = req.getParameter("check_code");
-        String savedCode = (String) req.getSession().getAttribute("check_code");
-
-        PrintWriter pw = resp.getWriter();
-        if (("root").equals(username) && ("123456").equals(password) && checkCode.equals(savedCode)) {
+        if(("houle").equals(username) && ("123456").equals(password)){
             User user = new User();
             user.setUsername(username);
             user.setPassword(password);
             req.getSession().setAttribute("user", user);
-            resp.sendRedirect("/webdemo/IndexServlet");
-        } else if (checkCode.equals(savedCode)) {
-            pw.write("用户名或者密码错误，登陆失败～");
+            String autoLogin = req.getParameter("autologin");
+            if(autoLogin != null){
+                Cookie cookie = new Cookie("autologin", username + "-" + password);
+                cookie.setMaxAge(Integer.parseInt(autoLogin));
+                cookie.setPath(req.getContextPath());
+                resp.addCookie(cookie);
+            }
+            resp.sendRedirect(req.getContextPath() + "/login-index.jsp");
         } else {
-            pw.write("验证码错误");
+            req.setAttribute("errorMsg", "用户名或者密码错误～");
+            req.getRequestDispatcher("/login.jsp").forward(req, resp);
         }
     }
 
