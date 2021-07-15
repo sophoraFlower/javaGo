@@ -13,7 +13,7 @@ public class Example01 {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/jdbc";
             String username = "root";
-            String password = "2021@Tokyo";
+            String password = "******";
             conn = DriverManager.getConnection(url, username, password);
             stmt = conn.createStatement();
             String sql = "select * from users";
