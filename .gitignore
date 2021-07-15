@@ -26,3 +26,5 @@ hs_err_pid*
 # webdemo
 webdemo/target
 webdemo/webdemo.iml
+webdemo/src/main/webapp/WEB-INF/classes
+webdemo/src/main/webapp/WEB-INF/lib

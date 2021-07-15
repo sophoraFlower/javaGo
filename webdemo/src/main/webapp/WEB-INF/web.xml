@@ -141,12 +141,12 @@
         <url-pattern>/CharacterServlet</url-pattern>
     </filter-mapping>
 
-    <listener>
-        <listener-class>com.example.webdemo8.MyListener</listener-class>
-    </listener>
-    
-    <listener>
-        <listener-class>com.example.webdemo9.MyAttributeListener</listener-class>
-    </listener>
+<!--    <listener>-->
+<!--        <listener-class>com.example.webdemo8.MyListener</listener-class>-->
+<!--    </listener>-->
+<!--    -->
+<!--    <listener>-->
+<!--        <listener-class>com.example.webdemo9.MyAttributeListener</listener-class>-->
+<!--    </listener>-->
     
 </web-app>
