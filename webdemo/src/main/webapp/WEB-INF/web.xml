@@ -123,4 +123,22 @@
         <url-pattern>/LogoutServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>CharacterServlet</servlet-name>
+        <servlet-class>com.example.webdemo7.CharacterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CharacterServlet</servlet-name>
+        <url-pattern>/CharacterServlet</url-pattern>
+
+    </servlet-mapping>
+    <filter>
+        <filter-name>CharacterFilter</filter-name>
+        <filter-class>com.example.webdemo7.CharacterFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterFilter</filter-name>
+        <url-pattern>/CharacterServlet</url-pattern>
+    </filter-mapping>
+
 </web-app>
