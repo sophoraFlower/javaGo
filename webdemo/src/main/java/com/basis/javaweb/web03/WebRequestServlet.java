@@ -14,7 +14,7 @@ public class WebRequestServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // 重点记忆～～
-        // 请求：http://localhost:8080/webdemo/web-request-servlet?userName=jack&age=11&sport=ball&sport=sleep
+        // 请求：http://127.0.0.1:8080/webdemo/web-request-servlet?userName=jack&age=11&sport=ball&sport=sleep
         //客户端请求信息
         System.out.println("应⽤上下⽂路径 getContextPath= " + req.getContextPath());
         System.out.println("客户端发出请求时的完整URL getRequestURL= " + req.getRequestURL());
@@ -31,5 +31,5 @@ public class WebRequestServlet extends HttpServlet {
         Map<String,String[]> map = req.getParameterMap();
         System.out.println("客户端请求参数封装成的map类型 getParameterMap= " + map.toString());
     }
-    
+
 }
