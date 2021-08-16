@@ -22,6 +22,20 @@ public class UserServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doGet(req, resp);
+        resp.setContentType("text/html;charset=utf-8");
+        PrintWriter printWriter = resp.getWriter();
+        printWriter.write("<div> 请求方式为 post </div>");
+        printWriter.write("<div> 勿忘历史，振兴中华～ </div>");
     }
+
+    @Override
+    public void destroy() {
+        System.out.println("servlet destroy");
+    }
+
+    @Override
+    public void init() throws ServletException {
+        System.out.println("servlet init");
+    }
+
 }
