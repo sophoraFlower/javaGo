@@ -4,6 +4,8 @@
     <title>Title</title>
 </head>
 <body>
-
+id:${loginUser.id}
+<br>
+name:${loginUser.name}
 </body>
 </html>

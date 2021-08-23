@@ -30,7 +30,7 @@ public class LoginFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        System.out.println("CustomFilter doFilter ");
+        System.out.println("LoginFilter doFilter~");
         request.setCharacterEncoding(encoding);
         response.setCharacterEncoding(encoding);
         response.setContentType("text/html;charset=utf-8");
@@ -42,13 +42,13 @@ public class LoginFilter implements Filter {
         {
             chain.doFilter(request,response);
         }else {
-            httpServletRequest.setAttribute("msg","⾮非法访问，请登录");
+            httpServletRequest.setAttribute("msg","⾮法访问，请登录");
             httpServletRequest.getRequestDispatcher(loginPage).forward(httpServletRequest, httpServletResponse);
         }
     }
 
     @Override
     public void destroy() {
-        Filter.super.destroy();
+        System.out.println("LoginFilter destroy~");
     }
 }
