@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
             User user = new User();
             user.setId(121);
             user.setName(name);
-            user.setHost("xdclass.net");
+            user.setHost("xxx.cn");
             req.getSession().setAttribute("loginUser",user);
             req.getRequestDispatcher("/basis/base07-user.jsp").forward(req,resp);
         } else {
