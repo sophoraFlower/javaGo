@@ -37,7 +37,7 @@ public class LoginFilter implements Filter {
         HttpServletRequest httpServletRequest = (HttpServletRequest)request;
         HttpServletResponse httpServletResponse = (HttpServletResponse)response;
 
-        //session⾥里里⾯面有⽤用户信息
+        //session⾥⾯有⽤户信息
         if(httpServletRequest.getSession().getAttribute("loginUser") !=null)
         {
             chain.doFilter(request,response);
