@@ -7,7 +7,8 @@
 * [main](https://github.com/sophoraFlower/javaGo/tree/main/src)：Java编程基础
 * [intelligence-robot](https://github.com/sophoraFlower/javaGo/tree/main/intelligence-robot)：[项目] 自动问答机器人（简单）
 * [webdemo](https://github.com/sophoraFlower/javaGo/tree/main/webdemo)：[项目] Servlet、JSP等（简单）
-* [forum]()：[项目] 技术论坛（简单）
+* [bookstore](https://github.com/sophoraFlower/javaGo/tree/main/webdemo/src/main/java/com/example/bookstore)：[项目] 图书管理系统（简单）
+* [forum](https://github.com/sophoraFlower/javaGo/tree/main/webdemo/src/main/java/com/basis/javaweb/form)：[项目] 技术论坛（简单）
 * SSM：SpringBoot、spring、mybatis 学习代码（基础）
 
 ### Java技术文档
