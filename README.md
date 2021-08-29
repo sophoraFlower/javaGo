@@ -1,7 +1,7 @@
 # javaGo
 > 经历过孤独的日子，我终于喜欢上自己的无知，与它们相处我感到惬意，如同那是一炉旺火。这时就该听任火焰缓缓燃烧，不说一句话，不评论任何事。必须在无知中自我更新。
->
-> (2021-08-01 ~ 2022-07-30) draw "Tokyo 2022" by commit codes ~
+
+* ![天宫](https://github.com/sophoraFlower/javaGo/blob/main/sources/天宫_压缩.png)
 
 ### 代码仓库介绍
 * [main](https://github.com/sophoraFlower/javaGo/tree/main/src)：Java编程基础
@@ -15,7 +15,3 @@
 * [《JavaGuide》](https://github.com/Snailclimb/JavaGuide#%E5%9F%BA%E7%A1%80)Java技术路线
 * [《廖雪峰Java教程》](https://www.liaoxuefeng.com/wiki/1252599548343744)Java编程基础教程
 * [《On Java 8》](https://gitee.com/go_dream/OnJava8/tree/master/docs/book)Java编程基础教程
-
-### 美图欣赏
-* ![天宫](https://github.com/sophoraFlower/javaGo/blob/main/sources/%E5%A4%A9%E5%AE%AB.png)
-* ![天问](https://github.com/sophoraFlower/javaGo/blob/main/sources/%E5%A4%A9%E9%97%AE.png)
