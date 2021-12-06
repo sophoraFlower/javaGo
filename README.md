@@ -1,8 +1,6 @@
 # javaGo
 > 经历过孤独的日子，我终于喜欢上自己的无知，与它们相处我感到惬意，如同那是一炉旺火。这时就该听任火焰缓缓燃烧，不说一句话，不评论任何事。必须在无知中自我更新。
 
-* ![天宫](https://github.com/sophoraFlower/javaGo/blob/main/sources/天宫_压缩.png)
-
 ### 代码仓库介绍
 * [main](https://github.com/sophoraFlower/javaGo/tree/main/src)：Java编程基础
 * [intelligence-robot](https://github.com/sophoraFlower/javaGo/tree/main/intelligence-robot)：[项目] 自动问答机器人（简单）
