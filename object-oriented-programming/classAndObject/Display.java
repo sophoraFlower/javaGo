@@ -16,6 +16,14 @@ public class Display {
         }
     }
 
+    public void control(Display d){
+        d.increase();
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+
     public int getValue(){
         return value;
     }
