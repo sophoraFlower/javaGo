@@ -3,7 +3,7 @@
 
 ### 代码仓库介绍
 * [intelligence-robot](https://github.com/sophoraFlower/javaGo/tree/main/intelligence-robot)：[项目实践] 自动问答机器人（简单）
-* [webdemo](https://github.com/sophoraFlower/javaGo/tree/main/object-oriented-programming)：[编程基础] 面向对象程序设计（简单）
+* [object-oriented-programming](https://github.com/sophoraFlower/javaGo/tree/main/object-oriented-programming)：[编程基础] 面向对象程序设计（简单）
 * SSM：SpringBoot、spring、mybatis 学习代码（基础）
 
 ### Java技术文档
