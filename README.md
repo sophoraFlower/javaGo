@@ -4,8 +4,15 @@
 ### 学习项目及笔记
 * [intelligence-robot](https://github.com/sophoraFlower/javaGo/tree/main/intelligence-robot)：[项目实践] 自动问答机器人
 * [object-oriented-programming](https://github.com/sophoraFlower/javaGo/tree/main/object-oriented-programming)：[编程基础] 面向对象程序设计
-** [面向对象程序设计](https://www.yuque.com/houlex/syq69x/phh1in)：[学习笔记]面向对象程序设计
+  - [面向对象程序设计](https://www.yuque.com/houlex/syq69x/phh1in)：[学习笔记]面向对象程序设计
+* 待定
 
 
 ### Tips
+#### 大佬笔记&文档
+
+
+#### 新人练手项目
+
+
 *完善补充中
