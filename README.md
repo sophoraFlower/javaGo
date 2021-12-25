@@ -3,10 +3,10 @@
 
 ### 学习项目及笔记
 * 编程基础
-  - [intelligence-robot](https://github.com/sophoraFlower/javaGo/tree/main/intelligence-robot)：自动问答机器人 [项目实践]
-  - [object-oriented-programming](https://github.com/sophoraFlower/javaGo/tree/main/object-oriented-programming)：面向对象程序设计 [编程基础]
-  - [《面向对象程序设计》](https://www.yuque.com/houlex/syq69x/phh1in)：面向对象程序设计 [学习笔记]
-  - [《基于Java的面向对象编程范式》](https://www.yuque.com/houlex/syq69x/ly9tmd)：基于Java的面向对象编程范式 [学习笔记]
+  - [intelligence-robot](https://github.com/sophoraFlower/javaGo/tree/main/intelligence-robot)：自动问答机器人 [CODE]
+  - [object-oriented-programming](https://github.com/sophoraFlower/javaGo/tree/main/object-oriented-programming)：面向对象程序设计 [CODE]
+  - [《面向对象程序设计》](https://www.yuque.com/houlex/syq69x/phh1in)：面向对象程序设计 [NOTE]
+  - [《基于Java的面向对象编程范式》](https://www.yuque.com/houlex/syq69x/ly9tmd)：基于Java的面向对象编程范式 [NOTE]
 * JavaWeb
  - Servlet
  - Jsp
