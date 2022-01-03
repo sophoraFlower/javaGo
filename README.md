@@ -13,7 +13,7 @@
 * 数据库基础
 * Linux
 * 算法基础
-  * 
+  * [《初级算法-leetcode》](https://www.yuque.com/houlex/syq69x/dmtq3r)：初级算法篇[NOTE]
 
 * Git&Github&GitLab
   * 《[Git基础及进阶](https://www.yuque.com/houlex/syq69x/qlipip)》：Git基础及进阶[NOTE]
