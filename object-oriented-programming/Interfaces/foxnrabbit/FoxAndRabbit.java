@@ -1,7 +1,10 @@
 package Interfaces.foxnrabbit;
 
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import javax.swing.JFrame;
+import javax.swing.*;
 
 import Interfaces.field.Field;
 import Interfaces.field.View;
@@ -12,7 +15,7 @@ import Interfaces.animal.Fox;
 import Interfaces.animal.Rabbit;
 
 import Interfaces.cell.Cell;
-
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 
 public class FoxAndRabbit {
@@ -20,6 +23,7 @@ public class FoxAndRabbit {
     //成员变量
     private Field theField;//Field变量，用来管理新的网格
     private View theView;//继承自Jpanel的类，用来显示图形
+    private JFrame frame;
 
     /*------构造函数------*/
     public FoxAndRabbit(int size) {
@@ -51,11 +55,21 @@ public class FoxAndRabbit {
 
         /*------把theField加入到显示框------*/
         theView=new View(theField);
-        JFrame frame = new JFrame();
+        frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
         frame.setTitle("Cells");
         frame.add(theView);
+        JButton btnStep = new JButton("单步");
+        frame.add(btnStep, BorderLayout.NORTH);
+        btnStep.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("按下啦~");
+                step();
+                frame.repaint();
+            }
+        });
         frame.pack();
         frame.setVisible(true);
     }
@@ -133,7 +147,7 @@ public class FoxAndRabbit {
         //创建一个30x30的网格
         //走100步
         FoxAndRabbit fr=new FoxAndRabbit(30);
-        fr.satrt(100);
+        // fr.satrt(100);
     }
 
 }
