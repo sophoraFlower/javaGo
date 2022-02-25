@@ -7,6 +7,24 @@
   - [object-oriented-programming](https://github.com/sophoraFlower/javaGo/tree/main/object-oriented-programming)：面向对象程序设计 [CODE]
   - [《面向对象程序设计》](https://www.yuque.com/houlex/syq69x/phh1in)：面向对象程序设计 [NOTE]
   - [《基于Java的面向对象编程范式》](https://www.yuque.com/houlex/syq69x/ly9tmd)：基于Java的面向对象编程范式 [NOTE]
+  - Java编程基础
+    - Java 基础
+    - Java 集合
+    - Java 多线程
+    - Java IO
+    - Java 正则表达式
+    - Java 格式化
+    - Java 日期&时间
+    - Java 反射
+    - Java 流式操作
+    - Java Lambda 表达式
+  - Java编程进阶
+    - Java 多线程基础
+    - Java 并发
+    - Java JVM
+    - Java 内存模型和垃圾回收
+    - Java 新特性
+    - Java 工具
 * JavaWeb
   - Servlet
   - Jsp
