@@ -36,10 +36,4 @@
 - [《面向对象程序设计》](https://www.yuque.com/houlex/syq69x/phh1in)：面向对象程序设计 [NOTE]
 - [《基于Java的面向对象编程范式》](https://www.yuque.com/houlex/syq69x/ly9tmd)：基于Java的面向对象编程范式 [NOTE]
 
-### Tips
-
-#### 大佬笔记&文档
-
-* 完善补充中
-
 #### 
