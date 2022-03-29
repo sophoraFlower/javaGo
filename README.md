@@ -24,6 +24,12 @@
 - Java 新特性
 - Java 工具
 
+### Linux
+
+- 【📒 笔记】[Linux入门和实践]([Linux入门及简单应用 · 语雀](https://www.yuque.com/houlex/tokyo2023/lzwzve))
+
+- 
+
 ## 项目实践
 
 - [intelligence-robot](https://github.com/sophoraFlower/javaGo/tree/main/intelligence-robot)：自动问答机器人 [CODE]
