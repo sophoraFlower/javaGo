@@ -28,7 +28,11 @@
 
 - 【📒 笔记】[Linux入门和实践]([Linux入门及简单应用 · 语雀](https://www.yuque.com/houlex/tokyo2023/lzwzve))
 
-- 
+### 软件测试
+
+- 【📒 笔记】[测试思想点滴]([测试思想点滴 · 语雀](https://www.yuque.com/houlex/tokyo2023/se57tk))
+
+- 【📒 笔记】[软件测试理论基础]([软件测试理论基础 · 语雀](https://www.yuque.com/houlex/tokyo2023/ggv32r))
 
 ## 项目实践
 
