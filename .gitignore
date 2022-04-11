@@ -28,3 +28,9 @@ webdemo/target
 webdemo/webdemo.iml
 webdemo/src/main/webapp/WEB-INF/classes
 webdemo/src/main/webapp/WEB-INF/lib
+
+# o2o
+o2o/o2o_V1/.settings
+o2o/o2o_V1/target
+o2o/o2o_V1/.classpath
+o2o/o2o_V1/.project
