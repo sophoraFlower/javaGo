@@ -8,7 +8,7 @@
 
 ### 项目笔记
 
-- 【📒 笔记】
+- 【📒 笔记】[Java开发环境及IDE配置（Eclipse）]([Java开发环境及IDE配置（Eclipse） · 语雀](https://www.yuque.com/houlex/tokyo2023/yiy5th))
 
 - 【📒 笔记】
 
