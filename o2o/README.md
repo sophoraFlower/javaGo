@@ -8,13 +8,13 @@
 
 ### 项目笔记
 
-- 【📒 笔记】[Java开发环境及IDE配置（Eclipse）]([Java开发环境及IDE配置（Eclipse） · 语雀](https://www.yuque.com/houlex/tokyo2023/yiy5th))
+- 【📒 笔记】[Java开发环境及IDE配置（Eclipse）](https://www.yuque.com/houlex/tokyo2023/yiy5th)
 
-- 【📒 笔记】[项目设计和框架搭建]([项目设计和框架搭建 · 语雀](https://www.yuque.com/houlex/tokyo2023/llbxng))
+- 【📒 笔记】[项目设计和框架搭建](https://www.yuque.com/houlex/tokyo2023/llbxng)
   
   - 对应代码：[https://github.com/sophoraFlower/javaGo/tree/main/o2o/o2o_V1](https://github.com/sophoraFlower/javaGo/tree/main/o2o/o2o_V1)
 
-- 【📒 笔记】[Logback配置与使用]([Logback配置与使用 · 语雀](https://www.yuque.com/houlex/tokyo2023/bzztd5))
+- 【📒 笔记】[Logback配置与使用](https://www.yuque.com/houlex/tokyo2023/bzztd5)
 
 - 【📒 笔记】店铺注册功能模块
   
