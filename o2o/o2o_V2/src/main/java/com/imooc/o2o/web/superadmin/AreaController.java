@@ -36,7 +36,7 @@ public class AreaController {
 		List<Area> list = new ArrayList<>();
 		
 		try {
-			list = areaService.getAreaLIst();
+			list = areaService.getAreaList();
 			modelMap.put("rows", list);
 			modelMap.put("total", list.size());
 		} catch (Exception e) {

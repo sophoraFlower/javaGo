@@ -6,6 +6,6 @@ import com.imooc.o2o.entity.Area;
 
 public interface AreaService {
 
-	List<Area> getAreaLIst();
+	List<Area> getAreaList();
 
 }

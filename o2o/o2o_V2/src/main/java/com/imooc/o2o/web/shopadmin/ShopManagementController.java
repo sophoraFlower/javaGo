@@ -5,6 +5,7 @@ package com.imooc.o2o.web.shopadmin;
 import java.io.IOException;
 // import java.io.InputStream;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -20,11 +21,16 @@ import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.imooc.o2o.dto.ShopExecution;
+import com.imooc.o2o.entity.Area;
 import com.imooc.o2o.entity.PersonInfo;
 import com.imooc.o2o.entity.Shop;
+import com.imooc.o2o.entity.ShopCategory;
 import com.imooc.o2o.enums.ShopStateEnum;
 import com.imooc.o2o.exceptions.ShopOperationException;
+import com.imooc.o2o.service.AreaService;
+import com.imooc.o2o.service.ShopCategoryService;
 import com.imooc.o2o.service.ShopService;
+import com.imooc.o2o.utils.CodeUtil;
 import com.imooc.o2o.utils.HttpServletRequestUtil;
 // import com.imooc.o2o.utils.ImageUtil;
 // import com.imooc.o2o.utils.PathUtil;
@@ -35,12 +41,49 @@ public class ShopManagementController {
 	
 	@Autowired
 	private ShopService shopService;
+	@Autowired
+	private ShopCategoryService shopCategoryService;
+	@Autowired
+	private AreaService areaService;
+	
+	/**
+	 * @Title: getshopinitinfo
+	 * 
+	 * @Description: 初始化区域信息 和 ShopCategory信息,返回给前台表单页面
+	 * 
+	 * @return: Map<String,Object>
+	 */
+	@RequestMapping(value = "/getshopinitinfo", method = RequestMethod.GET)
+	@ResponseBody
+	public Map<String, Object> getshopinitinfo() {
+		Map<String, Object> modelMap = new HashMap<String, Object>();
+		List<ShopCategory> shopCategoryList = null;
+		List<Area> areaList = null;
+		try {
+			shopCategoryList = shopCategoryService.getShopCategoryList(new ShopCategory());
+			areaList = areaService.getAreaList();
+			// 返回success shopCategoryList  areaList,前端通过data.success来判断从而展示shopCategoryList和areaList的数据
+			modelMap.put("success", true);
+			modelMap.put("shopCategoryList", shopCategoryList);
+			modelMap.put("areaList", areaList);
+		} catch (Exception e) {
+			modelMap.put("success", false);
+			modelMap.put("errMsg", e.getMessage());
+		}
+		return modelMap;
+	}
 	
 	@RequestMapping(value = "/registershop", method = RequestMethod.POST)
 	@ResponseBody
 	private Map<String, Object> registerShop(HttpServletRequest request) {
 		
 		Map<String, Object> modelMap = new HashMap<String, Object>();
+		// 验证码校验
+		if (!CodeUtil.checkVerifyCode(request)) {
+		    modelMap.put("success", false);
+		    modelMap.put("errMsg", "验证码不正确");
+		    return modelMap;
+		}
 		// 接受并转化相应的参数，包括店铺信息以及图片信息
 		String shopStr = HttpServletRequestUtil.getString(request, "shopStr");
 		ObjectMapper mapper = new ObjectMapper();
@@ -92,6 +135,7 @@ public class ShopManagementController {
 				se = shopService.addShop(shop, shopImg.getInputStream(), shopImg.getOriginalFilename());
 				if (se.getState() == ShopStateEnum.CHECK.getState()) {
 					modelMap.put("success", true);
+					modelMap.put("errMsg", "注册成功");
 				} else {
 					modelMap.put("success", false);
 					modelMap.put("errMsg", se.getStateInfo());
@@ -103,12 +147,12 @@ public class ShopManagementController {
 				modelMap.put("success", false);
 				modelMap.put("errMsg", e.getMessage());
 			}
-			return modelMap;
 		} else {
 			modelMap.put("success", false);
 			modelMap.put("errMsg", "请输入店铺信息");
 			return modelMap;
 		}
+		return modelMap;
 	}
 	
 //	private static void inputStreamToFile(InputStream ins, File file) {
