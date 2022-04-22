@@ -6,7 +6,7 @@
 
 ### 编程基础
 
-- Java 基础：
+- Java 基础：(略)
 - Java 面向对象：[《面向对象程序设计》]([面向对象程序设计 · 语雀](https://www.yuque.com/houlex/syq69x/phh1in))
 - Java 集合：
 - Java 多线程：
