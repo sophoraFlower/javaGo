@@ -7,9 +7,9 @@
 ### 编程基础
 
 - Java 基础：(略)
-- Java 面向对象：[《面向对象程序设计》]([面向对象程序设计 · 语雀](https://www.yuque.com/houlex/syq69x/phh1in))
+- Java 面向对象：[《面向对象程序设计》]([面向对象程序设计](https://www.yuque.com/houlex/syq69x/phh1in))
 - Java 集合：
-- Java 多线程：
+- 
 - Java IO：
 - Java 正则表达式：
 - Java 格式化：
@@ -17,7 +17,7 @@
 - Java 反射：
 - Java 流式操作：
 - Java Lambda 表达式：
-- Java 多线程基础：
+- Java 多线程：
 - Java 并发：
 - Java JVM：
 - Java 内存模型和垃圾回收：
