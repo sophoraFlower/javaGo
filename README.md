@@ -9,9 +9,8 @@
 - Java 基础：(略)
 - Java 面向对象：[《面向对象程序设计》]([面向对象程序设计](https://www.yuque.com/houlex/syq69x/phh1in))
 - Java 集合：
-- 
 - Java IO：
-- Java 正则表达式：
+- Java 正则表达式：[《正则表达式》]([《正则表达式》 · 语雀](https://www.yuque.com/houlex/tokyo2023/zp2f4r))
 - Java 格式化：
 - Java 日期&时间：
 - Java 反射：
