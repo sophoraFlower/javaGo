@@ -10,7 +10,7 @@
 - Java 面向对象：[《面向对象程序设计》]([面向对象程序设计](https://www.yuque.com/houlex/syq69x/phh1in))
 - Java 集合：
 - Java IO：
-- Java 正则表达式：[《正则表达式》]([《正则表达式》 · 语雀](https://www.yuque.com/houlex/tokyo2023/zp2f4r))
+- Java 正则表达式：[《正则表达式》]([《正则表达式》](https://www.yuque.com/houlex/tokyo2023/zp2f4r))
 - Java 格式化：
 - Java 日期&时间：
 - Java 反射：
@@ -35,5 +35,5 @@
 
 ## 项目实践
 
-- [intelligence-robot](https://github.com/sophoraFlower/javaGo/tree/main/intelligence-robot)：自动问答机器人 [CODE]
-- [object-oriented-programming](https://github.com/sophoraFlower/javaGo/tree/main/object-oriented-programming)：面向对象程序设计 [CODE]
+- [intelligence-robot](https://github.com/sophoraFlower/javaGo/tree/main/intelligence-robot)：自动问答机器人 [Code]
+- [object-oriented-programming](https://github.com/sophoraFlower/javaGo/tree/main/object-oriented-programming)：面向对象程序设计 [Code]
