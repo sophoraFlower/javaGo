@@ -29,6 +29,11 @@
 
 ### 软件测试
 
+### 综合技能
+#### 网络协议和Web接口
+#### MVC
+#### 从后端到前端
+
 ## 项目实践
 
 - [intelligence-robot](https://github.com/sophoraFlower/javaGo/tree/main/intelligence-robot)：自动问答机器人 [Code]
