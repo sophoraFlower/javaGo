@@ -25,11 +25,7 @@
 
 ### Linux
 
-- 【📒 笔记】[Linux入门和实践]([Linux入门及简单应用](https://www.yuque.com/houlex/tokyo2023/lzwzve))
-
 ### 数据库
-
-- 【📒 笔记】
 
 - ### 软件测试
 
