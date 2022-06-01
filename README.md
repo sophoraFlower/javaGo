@@ -27,11 +27,7 @@
 
 ### 数据库
 
-- ### 软件测试
-
-- 【📒 笔记】[测试思想点滴]([测试思想点滴](https://www.yuque.com/houlex/tokyo2023/se57tk))
-
-- 【📒 笔记】[软件测试理论基础]([软件测试理论基础](https://www.yuque.com/houlex/tokyo2023/ggv32r))
+### 软件测试
 
 ## 项目实践
 
